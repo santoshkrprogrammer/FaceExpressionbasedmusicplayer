@@ -27,27 +27,40 @@ def playmusic(label):
             songs = os.listdir(music_dir)
             a = random.randint(0, len(songs) - 1)
             print(songs[a])
+            cap.release()
+            cv2.destroyAllWindows()
             playsound(f'{music_dir}/{songs[a]}')
+            
         elif label == "Angry":
             music_dir = "/home/san/Music/angry"
             songs = os.listdir(music_dir)
             a = random.randint(0, len(songs) - 1)
             print(songs[a])
+            cap.release()
+            cv2.destroyAllWindows()
             playsound(f'{music_dir}/{songs[a]}')
+            
         elif label == "Sad":
             music_dir = "/home/san/Music/sad"
             songs = os.listdir(music_dir)
             a = random.randint(0, len(songs) - 1)
             print(songs[a])
+            cap.release()
+            cv2.destroyAllWindows()
             playsound(f'{music_dir}/{songs[a]}')
         elif label=="Fear":
             music_dir = "/home/san/Music/fear"
             songs = os.listdir(music_dir)
             a = random.randint(0, len(songs) - 1)
             print(songs[a])
+            cap.release()
+            cv2.destroyAllWindows()
             playsound(f'{music_dir}/{songs[a]}')
+            
         else:
             print("no songs")
+            cap.release()
+            cv2.destroyAllWindows()
     root = tk.Tk()
     frame = tk.Frame(root, width=100, height=100, background="bisque")
     frame.pack(fill='both', expand=True)
